@@ -1,4 +1,4 @@
-/WindowsClient/新建文本文档.txt
+﻿/WindowsClient/新建文本文档.txt
 /WindowsClient/SDM.WinClient/SDM.Code/bin
 /WindowsClient/SDM.WinClient/SDM.Code/obj
 /WindowsClient/SDM.WinClient/SDM.Common/bin
@@ -16,3 +16,6 @@
 /WindowsClient/SDM.WinClient/SDM.WinClient/bin
 /WindowsClient/SDM.WinClient/SDM.WinClient/obj
 /WindowsClient/SDM.WinClient/SDM.WinClient.v12.suo
+/WindowsClient/SDM.WinClient/SDM.DTO/obj
+/WindowsClient/SDM.WinClient/SDM.DTO/bin
+/AndroidClient/新建文本文档.txt
