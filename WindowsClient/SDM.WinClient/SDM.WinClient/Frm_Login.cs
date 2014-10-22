@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SDM.WinClient.Common;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace SDM.WinClient
 {
-    public partial class Frm_Login : DevExpress.XtraEditors.XtraForm
+    public partial class Frm_Login : BaseForm
     {
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;

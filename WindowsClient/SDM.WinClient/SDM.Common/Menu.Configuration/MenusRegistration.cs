@@ -7,6 +7,8 @@
 */
 
 using Microsoft.Practices.Unity;
+using SDM.WinClient;
+using SDM.WinClient.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +25,14 @@ namespace SDM.Common.Menu.Configuration
         public static void MenusResigter()
         {
             GlobalMenus.container = new UnityContainer();
+            UCResigter(GlobalMenus.container);
+        }
+        private static IUnityContainer UCResigter(IUnityContainer container)
+        {
+            #region 注册窗体
+            container.RegisterType<BaseForm, Frm_Login>("Frm_Login");
+            #endregion
+            return container;
         }
     }
 }
