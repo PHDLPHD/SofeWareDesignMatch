@@ -20,14 +20,9 @@ namespace SDM.Common.Menu.Configuration
     /// </summary>
     public class MenusRegistration
     {
-        public static void Enrollment()
+        public static void MenusResigter()
         {
-            GlobalMenus.container = MenuInsert(new UnityContainer());
-        }
-        private static IUnityContainer MenuInsert(IUnityContainer container)
-        {
-
-            return container;
+            GlobalMenus.container = new UnityContainer();
         }
     }
 }
