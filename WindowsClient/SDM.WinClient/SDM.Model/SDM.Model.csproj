@@ -63,9 +63,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SDM.Common\SDM.Common.csproj">
-      <Project>{1121fcbc-7179-4fa4-a412-494ae7b37584}</Project>
-      <Name>SDM.Common</Name>
+    <ProjectReference Include="..\SDM.DTO\SDM.DTO.csproj">
+      <Project>{a81c6bf2-f3d8-46b4-9db8-86f220244013}</Project>
+      <Name>SDM.DTO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
