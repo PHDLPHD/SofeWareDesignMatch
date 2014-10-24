@@ -54,7 +54,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-=
     <Compile Include="Common\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>

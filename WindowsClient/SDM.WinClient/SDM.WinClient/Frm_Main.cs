@@ -20,6 +20,7 @@ namespace SDM.WinClient
         {
             InitializeComponent();
             SkinMenus skinMenus = new SkinMenus(barManager1, defaultLookAndFeel1, "");
+            skinMenus.SkinMenu.Caption = "皮肤";
             bar2.AddItem(skinMenus.SkinMenu);
             IpText.Caption = new Func<string>(() =>
             {

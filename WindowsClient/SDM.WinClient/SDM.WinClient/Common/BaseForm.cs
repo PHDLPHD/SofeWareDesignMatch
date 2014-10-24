@@ -15,7 +15,8 @@ namespace SDM.WinClient.Common
 {
     public partial class BaseForm : XtraForm
     {
-        protected User user{get;set;}
+        protected static User user{get;set;}
+        protected event EventHandler saveEvent;
         public BaseForm()
         {
             InitializeComponent();
