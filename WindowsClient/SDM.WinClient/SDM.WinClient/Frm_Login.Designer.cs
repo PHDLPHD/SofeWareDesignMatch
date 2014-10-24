@@ -31,58 +31,57 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Login));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.UserName = new DevExpress.XtraEditors.TextEdit();
+            this.Password = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.checkButton1 = new DevExpress.XtraEditors.CheckButton();
+            this.LoginButton = new DevExpress.XtraEditors.CheckButton();
             this.Btn_Close = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Password.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Adobe 宋体 Std L", 14F);
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.DimGray;
             this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.labelControl1.Location = new System.Drawing.Point(93, 53);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(57, 22);
+            this.labelControl1.Size = new System.Drawing.Size(57, 24);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "用户名";
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Adobe 宋体 Std L", 14F);
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.DimGray;
             this.labelControl2.Location = new System.Drawing.Point(93, 115);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(38, 22);
+            this.labelControl2.Size = new System.Drawing.Size(38, 24);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "密码";
             // 
-            // textEdit1
+            // UserName
             // 
-            this.textEdit1.Location = new System.Drawing.Point(184, 52);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(186, 24);
-            this.textEdit1.TabIndex = 2;
+            this.UserName.Location = new System.Drawing.Point(184, 52);
+            this.UserName.Name = "UserName";
+            this.UserName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.UserName.Properties.Appearance.Options.UseFont = true;
+            this.UserName.Size = new System.Drawing.Size(186, 24);
+            this.UserName.TabIndex = 2;
             // 
-            // textEdit2
+            // Password
             // 
-            this.textEdit2.Location = new System.Drawing.Point(184, 112);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.PasswordChar = '*';
-            this.textEdit2.Size = new System.Drawing.Size(186, 24);
-            this.textEdit2.TabIndex = 3;
-            this.textEdit2.EditValueChanged += new System.EventHandler(this.textEdit2_EditValueChanged);
+            this.Password.Location = new System.Drawing.Point(184, 112);
+            this.Password.Name = "Password";
+            this.Password.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.Password.Properties.Appearance.Options.UseFont = true;
+            this.Password.Properties.PasswordChar = '*';
+            this.Password.Size = new System.Drawing.Size(186, 24);
+            this.Password.TabIndex = 3;
             // 
             // simpleButton1
             // 
@@ -94,13 +93,14 @@
             this.simpleButton1.TabIndex = 4;
             this.simpleButton1.Text = "注册";
             // 
-            // checkButton1
+            // LoginButton
             // 
-            this.checkButton1.Location = new System.Drawing.Point(248, 174);
-            this.checkButton1.Name = "checkButton1";
-            this.checkButton1.Size = new System.Drawing.Size(131, 39);
-            this.checkButton1.TabIndex = 5;
-            this.checkButton1.Text = "登陆";
+            this.LoginButton.Location = new System.Drawing.Point(248, 174);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(131, 39);
+            this.LoginButton.TabIndex = 5;
+            this.LoginButton.Text = "登陆";
+            this.LoginButton.CheckedChanged += new System.EventHandler(this.LoginButton_CheckedChanged);
             // 
             // Btn_Close
             // 
@@ -129,10 +129,10 @@
             this.ClientSize = new System.Drawing.Size(472, 259);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.Btn_Close);
-            this.Controls.Add(this.checkButton1);
+            this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.simpleButton1);
-            this.Controls.Add(this.textEdit2);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.Password);
+            this.Controls.Add(this.UserName);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -140,8 +140,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Frm_Login_MouseDown);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Password.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,10 +151,10 @@
 
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit UserName;
+        private DevExpress.XtraEditors.TextEdit Password;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.CheckButton checkButton1;
+        private DevExpress.XtraEditors.CheckButton LoginButton;
         private DevExpress.XtraEditors.SimpleButton Btn_Close;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
 

@@ -47,8 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Mapping\SDM_IncomeAndPayTypeMap.cs" />
+    <Compile Include="Models\Mapping\SDM_IOPSituationMap.cs" />
     <Compile Include="Models\Mapping\SDM_UsersMap.cs" />
     <Compile Include="Models\SDMContext.cs" />
+    <Compile Include="Models\SDM_IncomeAndPayType.cs" />
+    <Compile Include="Models\SDM_IOPSituation.cs" />
     <Compile Include="Models\SDM_Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
