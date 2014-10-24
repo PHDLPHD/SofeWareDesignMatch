@@ -53,10 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entity.cs" />
     <Compile Include="Menu.Configuration\GlobalMenus.cs" />
     <Compile Include="Menu.Configuration\MenusRegistration.cs" />
-    <Compile Include="Page.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

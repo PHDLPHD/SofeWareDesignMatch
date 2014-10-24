@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SDM.Common
+namespace SDM.DTO
 {
     public class Entity
     {

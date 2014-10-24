@@ -8,17 +8,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using SDM.DTO;
-using SDM.DTO.Main;
 
-namespace SDM.WinClient.Common
+namespace SDM.WinClient
 {
-    public partial class BaseForm : XtraForm
+    public partial class Frm_About : DevExpress.XtraEditors.XtraForm
     {
-        protected User user{get;set;}
-        public BaseForm()
+        public Frm_About()
         {
             InitializeComponent();
+        }
+
+        private void Frm_About_Deactivate(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

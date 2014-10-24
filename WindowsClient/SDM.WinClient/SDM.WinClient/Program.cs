@@ -22,7 +22,7 @@ namespace SDM.WinClient
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
-            Application.Run(new Frm_Login());
+            Application.Run(new Frm_Main());
         }
     }
 }
